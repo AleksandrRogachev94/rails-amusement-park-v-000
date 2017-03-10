@@ -1,0 +1,8 @@
+<tr>
+  <% if current_user.admin? %>
+    <td><%= link_to "Show #{attraction.name}", attraction_path(attraction) %></td>
+  <% else %>
+    <td><p><%= link_to "Go on #{attraction.name}", attraction_path(attraction) %></p></td>
+  <% end %>
+  <td><p><%= attraction.tickets %></p></td>
+</tr>

@@ -1,0 +1,14 @@
+<h1>All Attractions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tickets</th>
+  </tr>
+
+  <%= render @attractions %>
+</table>
+
+<% if policy(Attraction).create? %>
+  <%= link_to "New Attraction", new_attraction_path %>
+<% end %>

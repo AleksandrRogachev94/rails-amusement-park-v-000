@@ -67,6 +67,7 @@ def make_attractions_and_rides
     end
     new_attraction.users.each {|c| c.save}
     new_attraction.save
+    puts new_attraction.errors.full_messages.inspect
   end
 end
 

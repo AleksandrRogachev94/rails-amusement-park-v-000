@@ -1,0 +1,5 @@
+<h1>Welcome to Home Page!</h1>
+
+<% if logged_in? %>
+  <h3>You are logged in as <strong><%= current_user.name %></strong></h3>
+<% end %>
